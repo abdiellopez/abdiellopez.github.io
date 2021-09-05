@@ -185,6 +185,10 @@ footer{
   }
 
   @media screen and (max-width: 750px) {
+    body{
+        margin: 0 14px;
+    }
+
     nav .nav-links{
         display: none;
     }
