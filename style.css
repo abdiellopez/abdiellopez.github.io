@@ -133,7 +133,7 @@ nav a:hover{
 /* Featured Project */
 
 .section-title{
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .projects{
@@ -211,6 +211,7 @@ footer{
         flex-direction: column;
         text-align: left;
         align-items: left;
+        width: 100%;
         min-width: 320px;
     }
 
@@ -265,6 +266,10 @@ footer{
 
     .button{
         font-size: 14px;
+    }
+
+    .section-title{
+        margin-bottom: 20px;
     }
 
     .featured{
