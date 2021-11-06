@@ -166,6 +166,62 @@ nav a:hover{
     margin-top: 0px;
 }
 
+/* About Me */
+
+.profile{
+    display: flex;
+}
+
+.profile-image img{
+    height: 300px;
+    border: white 10px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.profile-image{
+    margin: 0px 40px;
+}
+
+.profile-info p{
+    font-size: 20px;
+}
+
+.profile-info h3{
+    margin-top: 0;
+}
+
+.contact-links{
+    display: flex;
+    margin-top: 45px;
+}
+
+.contact-links a{
+    margin-right: 20px;
+}
+
+.skills{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.skills ul{
+    list-style: none
+}
+
+.skills ul li{
+    font-weight: 200;
+    font-size:20px;
+}
+
+.skills ul li::before {
+    content: "\2013"; 
+    font-weight: 200; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; 
+  }
+
 /* Footer */
 
 footer{
@@ -296,6 +352,42 @@ footer{
 
     .project-info{
         margin-left: 0;
+    }
+
+    .profile{
+        flex-direction: column;
+    }
+
+    .profile-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-info p{
+        font-size: 16px;
+    }
+
+    .profile-info h3{
+        margin-top: 20px;
+    }
+    
+
+    .contact-links{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contact-links a{
+        margin-bottom: 15px;
+    }
+
+    .skills{
+        flex-direction: column;
+    }
+
+    .skills ul li{
+        font-size:16px;
     }
 
     footer{
