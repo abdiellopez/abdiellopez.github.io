@@ -229,6 +229,100 @@ b{
     margin-top: 50px;
 }
 
+#pp-prioritization-matrix{
+    background-image: url("../images/Feature\ Prioritization\ Matrix@3x.png");
+    height: 800px;
+}
+
+#pp-storyboard{
+    background-image: url("../images/Storyboard.png");
+    height: 600px;
+    margin-bottom:50px;
+}
+
+#prototyping{
+    margin-top: 50px;
+}
+
+.analysis-matrix{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    color:#F9E9EC;
+    width: 1300px;
+    border-collapse: collapse;
+    margin: 0 100px;
+}
+
+td{
+    text-align: center;
+    border: rgba(255, 255, 255, 0.351) 1px solid;
+}
+
+th{
+    padding: 10px 0;
+}
+
+.feature{
+    text-align: left;
+}
+
+#pp-onboarding-flow{
+    background-image: url("../images/PointPoint\ -\ onboarding.jpg");
+    height: 800px;
+}
+
+#pp-adding-points-flow{
+    background-image: url("../images/PointPoint\ -\ Adding\ Points.jpg");
+    height: 800px;
+}
+
+.sketches{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+}
+
+.sketches img{
+    height: 400px;
+    border-radius: 14px;
+}
+
+.wireframes{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+}
+
+.wireframes img{
+    height: 470px;
+    border-radius: 14px;
+}
+
+.hifi{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.hifi img{
+    height: 470px;
+    border-radius: 14px;
+}
+
+
 @media screen and (min-width: 1280px){
     .project-content-text{
         padding-right: 240px;
@@ -238,6 +332,28 @@ b{
     #pp-user-persona{
         padding-right: 240px;
         padding-left: 240px;
+    }
+
+    table{
+        margin: 0 240px;
+    }
+
+    .sketches{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 200px;
+    }
+
+    .wireframes{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 200px;
+    }
+
+    .hifi{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 200px 50px 200px;
     }
 
 }
@@ -308,5 +424,44 @@ b{
         padding-right: 12px;
         padding-left: 12px;
     } */
+    #pp-prioritization-matrix{
+        height: 400px;
+    }
+
+    #pp-storyboard{
+        height: 300px;
+    }
+
+    table{
+        margin: 12px;
+    }
+
+    #pp-onboarding-flow{
+        height: 200px;
+    }
+
+    #pp-adding-points-flow{
+        height: 200px;
+    }
+
+    .sketches{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .wireframes{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .wireframes{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .hifi{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
 
 }
