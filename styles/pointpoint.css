@@ -322,6 +322,50 @@ th{
     border-radius: 14px;
 }
 
+.project-content-text ul{
+    list-style: none
+}
+
+.project-content-text ul li{
+    font-family: 'Inter', sans-serif;
+}
+
+.project-content-text ul li::before {
+    content: "\2013"; 
+    font-weight: 200; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; 
+}
+
+#pp-improvements{
+    background-image: url("../images/Point\ Point\ improvements.jpg");
+    height: 500px;
+}
+
+.download{
+    font-size: 20px;
+}
+
+.download:hover{
+    background-color:#1D2F6F;
+    color: #F9E9EC;
+    border: #F9E9EC 2px solid;
+}
+
+.project-content-text.dload{
+    margin-bottom: 50px;
+}
+
+.conc{
+    display: flex;
+}
+
+.gif img{
+    height: 500px;
+    border-radius: 14px;
+    margin-right: 150px;
+}
 
 @media screen and (min-width: 1280px){
     .project-content-text{
@@ -464,4 +508,7 @@ th{
         grid-template-rows: repeat(6, 1fr);
     }
 
+    #pp-improvements{
+        height: 200px;
+    }
 }
