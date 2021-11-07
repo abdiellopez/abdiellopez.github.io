@@ -323,11 +323,12 @@ th{
 }
 
 .project-content-text ul{
-    list-style: none
+    list-style: none;
 }
 
-.project-content-text ul li{
+.project-content-text ol li{
     font-family: 'Inter', sans-serif;
+    line-height: 1.7;
 }
 
 .project-content-text ul li::before {
