@@ -511,4 +511,13 @@ th{
     #pp-improvements{
         height: 200px;
     }
+
+    .conc{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gif img{
+        margin: 0;
+    }
 }
