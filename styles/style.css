@@ -130,6 +130,41 @@ nav a:hover{
     margin-bottom: 0px;
 }
 
+.highlight{
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(59, 55, 58, 1) 50%);
+    background-size: 200%;
+    transition: background-position 0.5s;
+    padding: 0 5px;
+    animation: highlightTransition .7s ease forwards, textColor 2s ease forwards;
+}
+
+@keyframes highlightTransition {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: -100%;
+    }
+}
+
+@keyframes textColor{
+    from{
+        color: rgba(59, 55, 58, 1);
+    }
+
+    to{
+        color: #EEEEEE;
+    }
+}
+
+.highlight-onhover{
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(166, 166, 184, 0.4) 50%);
+    background-size: 200%;
+    transition: background-position 0.5s;
+    padding: 0 5px;
+}
+
 /* Featured Project */
 
 .section-title{
@@ -160,6 +195,16 @@ nav a:hover{
 
 .featured img{
     box-shadow: -20px 20px #A6A6B8;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.featured:hover .hover{
+    box-shadow: -30px 30px #A6A6B8;
+}
+
+.featured:hover .highlight-onhover{
+    background-position: -100%;
 }
 
 .featured h3{
