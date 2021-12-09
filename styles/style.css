@@ -196,7 +196,6 @@ nav a:hover{
 .featured img{
     box-shadow: -20px 20px #A6A6B8;
     transition: box-shadow 0.3s ease, transform 0.5s ease;
-    
 }
 
 .featured:hover .hover{
@@ -217,12 +216,19 @@ nav a:hover{
 
 .profile{
     display: flex;
+    margin-bottom: 80px;
 }
 
 .profile-image img{
     height: 300px;
-    border: white 10px solid;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: -20px 20px #A6A6B8;
+    transition: box-shadow 0.3s ease, transform 0.5s ease;
+}
+
+.profile:hover img{
+    box-shadow: -30px 30px #A6A6B8;
+    transform: translate(5px, -5px);
+    transform: scale(1.05, 1.05);
 }
 
 .profile-image{
@@ -230,11 +236,12 @@ nav a:hover{
 }
 
 .profile-info p{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 400;
 }
 
 .profile-info h3{
+    font-size: 36px;
     margin-top: 0;
 }
 
@@ -268,6 +275,7 @@ nav a:hover{
 .ux-item{
     text-align: center;
     font-weight: 500;
+    font-size: 21px;
 }
 
 .skill-section{
@@ -476,8 +484,19 @@ footer{
         justify-content: center;
     }
 
+    .profile-image img{
+        box-shadow: none;
+    }
+
+    .profile-image img:hover{
+        transition: none;
+        transform: none;
+        box-shadow: none;
+    }
+
     .profile-info p{
         font-size: 16px;
+        font-weight: 400;
     }
 
     .profile-info h3{
@@ -503,6 +522,10 @@ footer{
 
     .skills ul li{
         font-size:16px;
+    }
+
+    .ux-item{
+        font-size: 16px;
     }
 
     .tools-logo-grid{
