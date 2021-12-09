@@ -231,6 +231,7 @@ nav a:hover{
 
 .profile-info p{
     font-size: 20px;
+    font-weight: 400;
 }
 
 .profile-info h3{
@@ -255,23 +256,64 @@ nav a:hover{
     justify-content: space-evenly;
 }
 
-.skills ul{
-    list-style: none
+.ux-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+    place-items: center;
 }
 
-.skills ul li{
-    font-weight: 200;
-    font-size:20px;
+.ux-item{
+    text-align: center;
+    font-weight: 500;
 }
 
-.skills ul li::before {
-    content: "\2013"; 
-    font-weight: 200; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -2em; 
-  }
+.skill-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.skill-section h3{
+    margin-bottom: 50px;
+}
+
+.dev-logo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+    place-items: center;
+}
+
+.dev-logo-grid img{
+    transition: transform 0.2s ease-in-out;
+}
+
+.dev-logo-grid img:hover{
+    transform: scale(1.2);
+}
+
+.tools-logo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; 
+    place-items: center;
+    margin-top: 20px;
+}
+
+.tools-logo-grid img{
+    transition: transform 0.2s ease-in-out;
+}
+
+.tools-logo-grid img:hover{
+    transform: scale(1.2);
+}
 /* Footer */
 
 footer{
@@ -339,11 +381,32 @@ footer{
         margin-left: 0;
     }
 
+    .section-title.skills-title{
+        margin-bottom: 30px;
+    }
+
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-section{
+        margin-bottom: 50px;
+    }
+
+    .skill-section h3{
+        margin-bottom: 25px;
+    }
+
+    .tools-logo-grid{
+        margin-top: 0px;
+    }
+
     footer{
         justify-content: center;
     }
 
-  }
+}
 
   @media screen and (max-width: 950px) {
     body{
@@ -440,6 +503,10 @@ footer{
 
     .skills ul li{
         font-size:16px;
+    }
+
+    .tools-logo-grid{
+        margin-top: 0px;
     }
 
     footer{
