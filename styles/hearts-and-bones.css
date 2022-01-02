@@ -1,0 +1,579 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(233, 225, 202);
+}
+
+nav{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 900;
+    color: rgb(32, 92, 97);
+}
+
+li{
+    color: rgb(32, 92, 97);
+    padding-left:25px 
+}
+
+.current-page{
+    color: rgb(189, 189, 189);
+}
+
+.mobile-nav a{
+    text-decoration: none;
+    margin: 12px 0;
+    font-weight: 900;
+    color: rgb(32, 92, 97);
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(32, 92, 97, 0.351);
+    margin: 10px 0;
+}
+
+#hamburger{
+    color: rgb(32, 92, 97);
+}
+
+h1{
+    color: rgb(32, 92, 97);
+}
+
+h2 {
+    color: rgb(32, 92, 97);
+}
+
+h3 {
+    color: rgb(32, 92, 97);
+}
+
+h4 {
+    color: rgb(32, 92, 97);
+}
+
+p{
+    color: rgb(32, 92, 97);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+b{
+    font-weight: 900;
+}
+
+.project-content-img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+.case-study-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.055), rgb(0, 0, 0)),
+    url("../images/hearts-and-bones/HB-hero.jpg");
+    background-size: cover;
+    padding: 50px;
+}
+
+.case-study-hero h1{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    color: rgb(233, 225, 202);
+}
+
+.case-study-hero h2{
+    margin-top: 0;
+    color: rgb(233, 225, 202);
+}
+
+.case-study-hero h3{
+    color: rgb(233, 225, 202);
+}
+
+.case-study-hero p{
+    color: rgb(233, 225, 202);
+}
+
+.tools{
+    display: flex;
+}
+
+.pill{
+    margin-right: 15px;
+    background-color: rgb(246, 200, 46);
+    text-decoration: none;
+    color: #1D2F6F;
+    font-weight: 900;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 32px;
+    font-size: 12px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.right p{
+    margin-bottom: 50px;
+}
+
+.project-content-text{
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 18px;
+}
+
+.project-content-text h2{
+    margin-top: 18px;
+}
+
+.double-col{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    align-items: flex-start;
+}
+
+#user-research{
+    margin-top: 50px;
+}
+
+.stat{
+    align-items: center;
+}
+
+.big-stat-num{
+    display: flex;
+    justify-content: center;
+}
+
+.big-stat-num h1{
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.big-stat-desc p{
+    font-size: 32px;
+} 
+
+#hb-quotes{
+    background-image: url("../images/hearts-and-bones/research-quotes.png");
+    margin-top: 30px;
+    height: 600px;
+}
+
+#hb-affinity-diagram{
+    background-image: url("../images/hearts-and-bones/HB\ Affinity\ Diagram.jpg");
+    margin-top: 30px;
+    height: 1000px;
+}
+
+#hb-user-persona{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.persona-overview { grid-area: 1 / 1 / 2 / 2; }
+
+.persona-deets {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-left: 30px;
+}
+    
+.persona-summary { grid-area: 1 / 1 / 2 / 2; }
+.persona-goals { grid-area: 1 / 2 / 2 / 3; } 
+.persona-frustrations { grid-area: 2 / 1 / 3 / 2; } 
+.persona-behaviors { grid-area: 2 / 2 / 3 / 3; } 
+
+.persona-overview{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+    
+.rebecca { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url("../images/hearts-and-bones/rebeccafields.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.persona-demo { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.demographic{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.demo-category h4{
+    color: rgb(32, 92, 97);
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.demo-answer h4{
+    color: rgb(32, 92, 97);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#definition{
+    margin-top: 50px;
+}
+
+#pp-prioritization-matrix{
+    background-image: url("../images/Feature\ Prioritization\ Matrix@3x.png");
+    height: 800px;
+}
+
+#pp-storyboard{
+    background-image: url("../images/Storyboard.png");
+    height: 600px;
+    margin-bottom:50px;
+}
+
+#prototyping{
+    margin-top: 50px;
+}
+
+.analysis-matrix{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    color:rgb(32, 92, 97);
+    width: 1300px;
+    border-collapse: collapse;
+    margin: 0 100px;
+}
+
+td{
+    text-align: center;
+    border: rgba(255, 255, 255, 0.351) 1px solid;
+}
+
+th{
+    padding: 10px 0;
+}
+
+.feature{
+    text-align: left;
+}
+
+#pp-onboarding-flow{
+    background-image: url("../images/PointPoint\ -\ onboarding.jpg");
+    height: 800px;
+}
+
+#pp-adding-points-flow{
+    background-image: url("../images/PointPoint\ -\ Adding\ Points.jpg");
+    height: 800px;
+}
+
+.sketches{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+}
+
+.sketches img{
+    height: 400px;
+    border-radius: 14px;
+}
+
+.wireframes{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+}
+
+.wireframes img{
+    height: 470px;
+    border-radius: 14px;
+}
+
+.hifi{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.hifi img{
+    height: 470px;
+    border-radius: 14px;
+}
+
+.project-content-text ul{
+    list-style: none;
+}
+
+.project-content-text ol li{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+.project-content-text ul li::before {
+    content: "\2013"; 
+    font-weight: 200; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; 
+}
+
+#pp-improvements{
+    background-image: url("../images/Point\ Point\ improvements.jpg");
+    height: 500px;
+}
+
+.download{
+    font-size: 20px;
+}
+
+.download:hover{
+    background-color:#1D2F6F;
+    color: rgb(32, 92, 97);
+    border: rgb(32, 92, 97) 2px solid;
+}
+
+.project-content-text.dload{
+    margin-bottom: 50px;
+}
+
+.conc{
+    display: flex;
+}
+
+.gif img{
+    height: 500px;
+    border-radius: 14px;
+    margin-right: 150px;
+}
+
+@media screen and (min-width: 1280px){
+    .project-content-text{
+        padding-right: 240px;
+        padding-left: 240px;
+    }
+
+    /* #hb-affinity-diagram{
+        height: 400px;
+    } */
+
+    #hb-user-persona{
+        padding-right: 240px;
+        padding-left: 240px;
+    }
+
+    table{
+        margin: 0 240px;
+    }
+
+    .sketches{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 200px;
+    }
+
+    .wireframes{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 200px;
+    }
+
+    .hifi{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 200px 50px 200px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .case-study-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 12px 12px 0 12px;
+        height:400px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.427), rgb(0, 0, 0)), url("../images/hearts-and-bones/HB-hero.jpg");
+    }
+
+    .right-align{
+        text-align: left;
+    }
+
+    .right p{
+        margin-bottom: 35px;
+    }
+
+    .pill{
+        font-size: 10px;
+    }
+
+    .project-content-text{
+        padding-right: 12px;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+
+    .double-col{
+        display: block;
+    }
+
+    .project-content-img{
+        height: 300px;
+    }
+
+    .big-stat-num h1{
+        font-size: 88px;
+        margin-bottom: 10px;
+    }
+    
+    .big-stat-desc p{
+        font-size: 18px;
+        text-align: center;
+    } 
+
+    #hb-quotes{
+        height: 400px;
+    }
+
+    #hb-affinity-diagram{
+        height: 400px;
+    }
+
+    #hb-user-persona {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+        
+    .persona-overview { grid-area: 1 / 1 / 2 / 2; }
+
+    .persona-deets { 
+        grid-area: 2 / 1 / 3 / 2; 
+        grid-row-gap: 0;
+        grid-column-gap: 7px;
+        margin:0;
+        /* padding-right: 12px;
+        padding-left: 12px; */
+    }
+
+    .persona-deets p{
+        font-size: 15px;
+    }
+
+    /* .demographic{
+        padding-right: 12px;
+        padding-left: 12px;
+    } */
+    #pp-prioritization-matrix{
+        height: 400px;
+    }
+
+    #pp-storyboard{
+        height: 300px;
+    }
+
+    table{
+        margin: 12px;
+    }
+
+    #pp-onboarding-flow{
+        height: 200px;
+    }
+
+    #pp-adding-points-flow{
+        height: 200px;
+    }
+
+    .sketches{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .wireframes{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .wireframes{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .hifi{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #pp-improvements{
+        height: 200px;
+    }
+
+    .conc{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gif img{
+        margin: 0;
+    }
+}
