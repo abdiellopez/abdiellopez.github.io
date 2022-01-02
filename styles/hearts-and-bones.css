@@ -284,14 +284,13 @@ b{
 
 table{
     color:rgb(32, 92, 97);
-    width: 1300px;
     border-collapse: collapse;
     margin: 0 100px;
 }
 
 td{
     text-align: center;
-    border: rgba(255, 255, 255, 0.351) 1px solid;
+    border: rgb(32, 92, 97);
 }
 
 th{
