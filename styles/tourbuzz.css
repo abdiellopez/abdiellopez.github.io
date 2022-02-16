@@ -113,6 +113,7 @@ b{
 
 .tools{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .pill, .button{
@@ -320,7 +321,8 @@ b{
         margin-bottom: 35px;
     }
 
-    .pill{
+    .pill, .button{
+        margin-top: 10px;
         font-size: 10px;
     }
 
