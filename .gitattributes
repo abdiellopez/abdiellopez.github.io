@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 #Ignore Mac File
-.DS_store
+.DS_Store
